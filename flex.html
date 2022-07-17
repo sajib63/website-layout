@@ -7,14 +7,26 @@
     <title>flexbox</title>
     <style>
         .container{
-            width: 100%;
-            height: auto;
+            
+           height: 300px;
             border: 1px solid black;
+            display: flex;
+            /* justify-content: center; */
+            /* align-items:center; */
+            /* align-items: center; */
+            /* flex-wrap: wrap; */
+            /* flex-direction: row; */
+            align-items: stretch;
+            
+            
         }
         .box{
-            width: 200px;
-            height: 200px;
+            width: 100px;
+            
             border: 2px dotted black;
+        }
+        #box-2{
+            flex-grow: 1;
         }
     </style>
 
@@ -22,8 +34,12 @@
 <body>
     <div class="container">
         <div class="box">box-1</div>
-        <div class="box">box-2</div>
-        <div class="box">box-3</div>
+       
+        <div id="box-2" class="box">box-2</div>
+
+        <div class="box">box-1</div>
+     
+        
     </div>
 </body>
 </html>
